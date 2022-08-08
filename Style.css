@@ -48,7 +48,7 @@ main {
     text-align: center;
 }
 /*---------------------------------------------------SECCION 1 - IDIOMAS*/
-main .section1 .main-language {
+main .section1 .section1__main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -57,89 +57,89 @@ main .section1 .main-language {
     margin-right: 100px;
     margin-bottom: 1%;
 }
-.main-language .items-language a{
+.section1__main .section1__main--item a{
     color: #36c;
     font-weight: 700; /*grosor de la letra*/
     text-decoration: none;
 }
-.main-language .items-language a:hover{
+.section1__main .section1__main--item a:hover{
     text-decoration: underline;
 }
-.main-language .items-language small {
+.section1__main .section1__main--item small {
     font-size: 1.3rem;
     margin-top: 10px;
     color: rgb(94, 94, 94);
 }
-.main-language .items-language:hover {
+.section1__main .section1__main--item:hover {
     background-color: #f1f1f1;
 }
-.main-language .items-language {
+.section1__main .section1__main--item {
     width: 38%;
 }
-.section1 .main-language .Español {
+.section1 .section1__main .Español {
     grid-column: 2/3; /*Posición del div*/
     grid-row: 1;
     margin-left: 50%;
 }
-.section1 .main-language .Japones {
+.section1 .section1__main .Japones {
     grid-column: 2/3;
     grid-row: 2;
     margin-left: 38%;
 }
-.section1 .main-language .Aleman {
+.section1 .section1__main .Aleman {
     grid-column: 2/3;
     grid-row: 3;
     margin-left: 35%;
 }
-.section1 .main-language .Chino {
+.section1 .section1__main .Chino {
     grid-column: 2/3;
     grid-row: 4;
     margin-left: 38%;
 }
-.section1 .main-language .Polaco {
+.section1 .section1__main .Polaco {
     grid-column: 2/3;
     grid-row: 5;
     margin-left: 50%;
 }
-.section1 .main-language .Ingles {
+.section1 .section1__main .Ingles {
     grid-column: 3/4;
     grid-row: 1;   
     margin-left: 10%;
 }
-.section1 .main-language .Ruso {
+.section1 .section1__main .Ruso {
     grid-column: 3/4;
     grid-row: 2;
     margin-left: 23%;
 }
-.section1 .main-language .Frances {
+.section1 .section1__main .Frances {
     grid-column: 3/4;
     grid-row: 3;
     margin-left: 27%;
 }
-.section1 .main-language .Italiano {
+.section1 .section1__main .Italiano {
     grid-column: 3/4;
     grid-row: 4;
     margin-left: 23%;
 }
-.section1 .main-language .Portugues {
+.section1 .section1__main .Portugues {
     grid-column: 3/4;
     grid-row: 5;
     margin-left: 10%;
 }
 /*IMAGEN*/
-.section1 .main-language .mundologo {
+.section1 .section1__main .section1__main--logo {
     grid-column: 2/4;
     grid-row: 1/6;
     margin: 3% auto; /* Vertical | Horizontal */
     width: 210px;
 }
-.mundologo figure img{
+.section1__main--logo figure img{
     width: 200px;
     margin-top: 45px;
 }
 
 /*---------------------------------------------------SECCION 1 - BARRA DE BUSQUEDA*/
-main .section1 .search-container {
+main .section1 .section1__search {
     float: none;
     max-width: 95%;
     width: 540px;
@@ -147,27 +147,27 @@ main .section1 .search-container {
     text-align: center;
     vertical-align: middle; /*Alinea el centro del elemento con el centro de las letras minúsculas del elemento primario.*/
 }
-.search-container .pure-form fieldset {
+.section1__search .section1__search--form fieldset {
     word-spacing: -4px; /*establece la longitud del espacio entre palabras y entre etiquetas.*/
     margin: 0;
     padding: 0.56rem 0 1.2rem;
     border: 0;
 }
-.search-container .pure-form .search-input {
+.section1__search .section1__search--form .search-input {
     display: inline-block;
     position: relative;
     width: 80%;
     vertical-align: top;
     background-color: #fff;
 }
-.search-container .pure-form input {
+.section1__search .section1__search--form input {
     background-color: #fff;
     box-sizing: border-box;
     border: 1px solid #a2a9b1;
     box-shadow: inset 0 0 0 1px #fff; /* inset | offset-x | offset-y | blur-radius | spread-radius | color */
     vertical-align: middle;
 }
-.pure-form input:focus {
+.section1__search--form input:focus {
     outline:0;
     border: 2px solid #36c;
 }
@@ -178,7 +178,7 @@ main .section1 .search-container {
     padding: .8rem 1.5rem .8rem 1.2rem;
     font-size: 1.6rem;
 }
-.search-container .pure-form .search-button {
+.section1__search .section1__search--form .search-button {
     display: inline-block;
     cursor: pointer;
     border: 1px solid #a2a9b1;
@@ -187,7 +187,7 @@ main .section1 .search-container {
     border-color: #36c;
     color: #fff;
 }
-.pure-form .search-input button {
+.section1__search--form .search-input button {
     min-height: 4.4rem;
     border-radius: 0 2px 2px 0;
     padding: 0.8rem 1.6rem;
@@ -197,7 +197,7 @@ main .section1 .search-container {
     width: 22px;
     height: 22px;
 }
-.section1 .language-button button {
+.section1 .section1__button button {
     position: relative;
     z-index: 1; /*Posición relativa por arriba de otro objeto*/
     padding: 0.6rem 1.2rem;
@@ -209,21 +209,21 @@ main .section1 .search-container {
     font-weight: 700;
     line-height: 1;
 }
-.section1 .language-button button:hover {
+.section1 .section1__button button:hover {
     background-color: #fff;
     border-color: #a2a9b1;
 }
-.section1 .language-button .languge-icon {/*ICONO DE IDIOMA*/
+.section1 .section1__button .languge-icon {/*ICONO DE IDIOMA*/
     background-position: 0 -617px;
     width: 22px;
     height: 22px;
 }
-.section1 .language-button .arrow-dowm {/*ICONO FLECHA AZUL*/
+.section1 .section1__button .arrow-dowm {/*ICONO FLECHA AZUL*/
     background-position: 0 -527px;
     width: 14px;
     height: 14px;
 }
-.section1 .language-button .button-text {
+.section1 .section1__button .button-text {
     padding: 0 0.64rem;
     vertical-align: middle;
 }
@@ -257,32 +257,32 @@ main .section2 {
     text-decoration: none;
     color: #36c;
 }
-main .section2 .sidebar {
+main .section2 .section2__sidebar {
     width: 35%;
     float: left;
     clear: left;
     margin-bottom: 3.2rem;
     vertical-align: top;
 }
-.section2 .sidebar .sidebar-content {
+.section2 .section2__sidebar .section2__sidebar--content {
     position: relative;
     max-width: 350px;
     margin: 0 auto;
 }
-.section2 .wikiapp .sidebar-content {
+.section2 .wikiapp .section2__sidebar--content {
     background-color: #f8f9fa;
 }
-.sidebar .sidebar-content .img-posicion {
+.section2__sidebar .section2__sidebar--content .img-posicion {
     position: absolute;
     top: 0;
     left: .8rem;
 }
-.sidebar .sidebar-content .img-wikimedia {
+.section2__sidebar .section2__sidebar--content .img-wikimedia {
     background-position: 0 -212px;
     width: 42px;
     height: 42px;
 }
-.sidebar .sidebar-content .sidebar-text {
+.section2__sidebar .section2__sidebar--content .section2__sidebar--text {
     position: relative;
     margin: 0;
     padding-left: 6rem;
@@ -290,142 +290,142 @@ main .section2 .sidebar {
     color: #54595d;
     text-align: start;
 }
-.wikiapp .sidebar-content .sidebar-text {
+.wikiapp .section2__sidebar--content .section2__sidebar--text {
     padding-top: .8rem;
     padding-bottom: .8rem;
 }
-.wikiapp .sidebar-content .img-apss {
+.wikiapp .section2__sidebar--content .img-apss {
     background-position: 0 -719px;
     width: 42px;
     height: 42px;
 }
-.wikiapp .sidebar-content .img-posicion {
+.wikiapp .section2__sidebar--content .img-posicion {
     top: 0.8rem;
 }
-.wikiapp .sidebar-content strong {
+.wikiapp .section2__sidebar--content strong {
     font-weight: 700;
 }
-.wikiapp .sidebar-content p {
+.wikiapp .section2__sidebar--content p {
     margin-top: 7px;
     margin-bottom: 10px;
 }
-.wikiapp .sidebar-content ul {
+.wikiapp .section2__sidebar--content ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
-.wikiapp .sidebar-content ul li {
+.wikiapp .section2__sidebar--content ul li {
     display: inline-block;
 }
-.sidebar-content .sidebar-text .link-dona:hover {
+.section2__sidebar--content .section2__sidebar--text .link-dona:hover {
     text-decoration: underline;
 }
-main .section2 .container-option {
+main .section2 .section2__options {
     display: inline-block;
     width: 65%;
 }
-.section2 .container-option .items-options {
+.section2 .section2__options .section2__options--item {
     float: left;
     position: relative;
     width: 33%;
     height: 9rem;
 }
-.container-option .items-options .link-item{
+.section2__options .section2__options--item .link-item{
     /*display: flex;*/
     display: flex;
     min-height: 50px;
     width: 90%;
     padding: 1em;
 }
-.container-option .items-options:hover {
+.section2__options .section2__options--item:hover {
     background-color: #f1f1f1;
 }
-.container-option .items-options .img-container {
+.section2__options .section2__options--item .img-container {
     display: inline-block;
     width: 50px;
     text-align: center;
     margin: 3px;
 }
-.container-option .items-options .txt-item {
+.section2__options .section2__options--item .txt-item {
     max-width: 65%;
     font-size: 1.4rem;
     vertical-align: middle;
     white-space: normal;
     text-align: start;
 }
-.items-options .txt-item .text-item {
+.section2__options--item .txt-item .text-item {
     display: block;
     color: #54595d;
     font-size: 1.3rem;;
 }
-.items-options .img-container .img-commons {
+.section2__options--item .img-container .img-commons {
     background-position: 0 0;
     width: 47px;
     height: 47px;
 }
-.items-options .img-container .img-wikiviajes {
+.section2__options--item .img-container .img-wikiviajes {
     background-position: 0 -446px;
     width: 36px;
     height: 36px;
 }
-.items-options .img-container .img-wikicionario {
+.section2__options--item .img-container .img-wikicionario {
     background-position: 0 -482px;
     width: 37px;
     height: 37px;
 }
-.items-options .img-container .img-wikilibros {
+.section2__options--item .img-container .img-wikilibros {
     background-position: 0 -126px;
     width: 37px;
     height: 37px;
 }
-.items-options .img-container .img-wikinoticias {
+.section2__options--item .img-container .img-wikinoticias {
     background-image: url(https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikinews-logo_sister@2x.png);
     background-position: 0 0;
     background-size: 47px 26px;
     width: 47px;
     height: 26px;
 }
-.items-options .img-container .img-wikidata {
+.section2__options--item .img-container .img-wikidata {
     background-position: 0 -163px;
     width: 49px;
     height: 49px;
 }
-.items-options .img-container .img-wikiversidad {
+.section2__options--item .img-container .img-wikiversidad {
     background-position: 0 -409px;
     width: 43px;
     height: 37px;
 }
-.items-options .img-container .img-wikiquote {
+.section2__options--item .img-container .img-wikiquote {
     background-position: 0 -286px;
     width: 42px;
     height: 42px;
 }
-.items-options .img-container .img-mediawiki {
+.section2__options--item .img-container .img-mediawiki {
     background-position: 0 -47px;
     width: 42px;
     height: 42px;
 }
-.items-options .img-container .img-wikisource {
+.section2__options--item .img-container .img-wikisource {
     background-position: 0 -328px;
     width: 39px;
     height: 39px;
 }
-.items-options .img-container .img-wikispecias {
+.section2__options--item .img-container .img-wikispecias {
     background-position: 0 -367px;
     width: 42px;
     height: 42px;
 }
-.items-options .img-container .img-metawiki {
+.section2__options--item .img-container .img-metawiki {
     background-position: 0 -89px;
     width: 37px;
     height: 37px;
 }
-.wikiapp .sidebar-content .googleplay {
+.wikiapp .section2__sidebar--content .googleplay {
     background-position: 0 -541px;
     width: 124px;
     height: 38px;
 }
-.wikiapp .sidebar-content .appstore {
+.wikiapp .section2__sidebar--content .appstore {
     background-position: 0 -579px;
     width: 110px;
     height: 38px;
@@ -462,63 +462,63 @@ footer p a:hover {
     text-decoration: underline;
 }
 
-@media (max-width: 900px) {
-    .container-option .items-options .link-item{
+@media (max-width: 958px) {
+    .section2__options .section2__options--item .link-item{
         padding: 0px;
     }
-    .section1 .main-language {
+    .section1 .section1__main {
         height: auto ;
     }
-    .section1 .main-language .Español{
+    .section1 .section1__main .Español{
         grid-column: 1/3;
         margin-left: 10%;
         width: auto;
     }
-    .section1 .main-language .Japones{
+    .section1 .section1__main .Japones{
         grid-column: 1/3;
         margin-left: 0px;
         margin-right: 10%;
         width: auto;
     }
-    .section1 .main-language .Aleman{
+    .section1 .section1__main .Aleman{
         grid-column: 1/3;
         margin-left: 0px;
         margin-right: 20%;
         width: auto;
     }
-    .section1 .main-language .Chino{
+    .section1 .section1__main .Chino{
         grid-column: 1/3;
         margin-left: 0px;
         margin-right: 10%;
         width: auto;
     }
-    .section1 .main-language .Polaco{
+    .section1 .section1__main .Polaco{
         grid-column: 1/3;
         margin-left: 10%;
         width: auto;
     }
-    .section1 .main-language .Ingles{
+    .section1 .section1__main .Ingles{
         grid-column: 3/5;
         margin-left: 0px;
         margin-right: 10%;
         width: auto;
     }
-    .section1 .main-language .Ruso{
+    .section1 .section1__main .Ruso{
         grid-column: 3/5;
         margin-left: 10%;
         width: auto;
     }
-    .section1 .main-language .Frances{
+    .section1 .section1__main .Frances{
         grid-column: 3/5;
         margin-left: 15%;
         width: auto;
     }
-    .section1 .main-language .Italiano{
+    .section1 .section1__main .Italiano{
         grid-column: 3/5;
         margin-left: 10%;
         width: auto;
     }
-    .section1 .main-language .Portugues{
+    .section1 .section1__main .Portugues{
         grid-column: 3/5;
         margin-left: 0px; 
         margin-right: 10%;
@@ -527,94 +527,77 @@ footer p a:hover {
 }
 
 @media (max-width: 750px) {
-    main .section2 .sidebar {
-        width: 100%;
-    }
-    .section2 .sidebar .sidebar-content{
+    main .section2 .section2__sidebar {width: 100%;}
+    .section2 .section2__sidebar .section2__sidebar--content{
         margin: 0px;
         max-width: 100%;
     }
-    .sidebar .sidebar-content .sidebar-text{
+    .section2__sidebar .section2__sidebar--content .section2__sidebar--text{
         text-align: center;
         padding: 0;
     }
-    .sidebar .sidebar-content .img-posicion{
+    .section2__sidebar .section2__sidebar--content .img-posicion{
         position: relative;
         margin-bottom: 10px;
     }
-    .sidebar .sidebar-content .img-apss{
-        margin-right: 10px;
-    }
-    main .section2 .container-option{
+    .section2__sidebar .section2__sidebar--content .img-apss{margin-right: 10px;}
+    main .section2 .section2__options{
         width: 100%;
         margin-bottom: 100px;
+        display: grid;
+        grid-template-columns: repeat(
+            auto-fill, minmax(200px, 1fr));
+        justify-content: center;
+        align-items: center;
     }
+    .section2 .section2__options .section2__options--item {width: 100%;}
     main .section2 .wikiapp{
         position: absolute;
-        top: 137%;
+        top: 167%;
+        right: 0;
     }
-    main .section1 .main-language{
-        grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
-        grid-template-rows:auto;
-        gap:0;
-    }
-    .section1 .main-language .Español{
-        grid-column: 1;
-        margin-left: 0;
-    }
-    .section1 .main-language .Japones{
-        grid-column: 2;
-        grid-row: 1;
-        margin-left: 0;
-    }
-    .section1 .main-language .Aleman{
-        grid-column: 3;
-        grid-row: 1;
-        margin-left: 0;
-    }
-    .section1 .main-language .Chino{
-        grid-column: 4;
-        grid-row: 1;
-        margin-left: 0;
-    }
-    .section1 .main-language .Polaco{
-        grid-column: 5;
-        grid-row: 1;
-        margin-left: 0;
-    }
-    .section1 .main-language .Ingles{
-        grid-column: 6;
-        grid-row: 1;
-        margin-left: 0;
-    }
-    .section1 .main-language .Ruso{
-        grid-column: 7;
-        grid-row: 1;
-        margin-left: 0;
-    }
-    .section1 .main-language .Frances{
-        grid-column: 8;
-        grid-row: 1;
-        margin-left: 0;
-    }
-    .section1 .main-language .Italiano{
-        grid-column: 9;
-        grid-row: 1;
-        margin-left: 0;
-    }
-    .section1 .main-language .Portugues{
-        grid-column: 10;
-        grid-row: 1;
-        margin-left: 0;
-    }
-    main .section1 .main-language .mundologo{
+    main .section1 .section1__main{display: block;}
+    .section1 .section1__main .Español{margin: 0;}
+    .section1 .section1__main .Japones{margin: 0;}
+    .section1 .section1__main .Aleman{margin: 0;}
+    .section1 .section1__main .Chino{margin: 0;}
+    .section1 .section1__main .Polaco{margin: 0;}
+    .section1 .section1__main .Ingles{ margin: 0;}
+    .section1 .section1__main .Ruso{    margin: 0;}
+    .section1 .section1__main .Frances{ margin: 0;}
+    .section1 .section1__main .Italiano{ margin: 0;}
+    .section1 .section1__main .Portugues{margin: 0;}
+    main .section1 .section1__main .section1__main--logo{
         position: absolute;
         top:4px;
         left: 25%;
         width: 55px;
         margin: 0;
     }
-    .section1 .main-language .mundologo img{
+    .section1 .section1__main .section1__main--logo img{width: 55px;}
+}
+
+@media (max-width: 600px){
+    header figure img {width: 130px;}
+    header figure {margin: 0 ;}
+    header span {font-size: 12px;}
+    main .section1 .section1__main .section1__main--logo{
+        top: 10px;
+        left: 15%;
+    }
+    .section1 .section1__main .section1__main--logo img{
         width: 55px;
     }
+    #searchInput {height: 3.5rem;}
+    .section1__search--form .search-input button {
+        min-height: 3.5rem;
+        padding: 0rem 0.6rem;
+    }
+    main .section2 .section2__options{
+       display: grid;
+       grid-template-columns: repeat(
+        auto-fill, minmax(150px, 1fr));
+    }
+    main .section2 .wikiapp{top: calc(100% + 100%);}
+    footer {margin-top: 100px;}
 }
